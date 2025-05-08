@@ -8,7 +8,7 @@ const Login = ({ onLogin }) => {
   const loginUser = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://localhost:7150/api/auth/login', {
+      const response = await axios.post('https://movies-db.azurewebsites.net/api/auth/login', {
         email,
         password
       });

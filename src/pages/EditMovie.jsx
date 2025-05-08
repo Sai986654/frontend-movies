@@ -16,7 +16,7 @@ const EditMovie = () => {
   useEffect(() => {
     const fetchMovie = async () => {
       const token = localStorage.getItem("token");
-      const res = await axios.get(`https://localhost:7150/api/movies`, {
+      const res = await axios.get(`https://movies-db.azurewebsites.net/api/movies`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       const foundMovie = res.data.find((m) => m.id.toString() === id);
@@ -36,7 +36,7 @@ const EditMovie = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const token = localStorage.getItem("token");
-    await axios.put(`https://localhost:7150/api/movies/${movieId}`, movie, {
+    await axios.put(`https://movies-db.azurewebsites.net/api/movies/${movieId}`, movie, {
       headers: { Authorization: `Bearer ${token}` }
     });
     navigate("/admin");

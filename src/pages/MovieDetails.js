@@ -8,7 +8,7 @@ const MovieDetails = () => {
   const [movie, setMovie] = useState(null);
 
   useEffect(() => {
-    axios.get(`https://localhost:7150/api/movies/${id}`)
+    axios.get(`https://movies-db.azurewebsites.net/api/movies/${id}`)
       .then((res) => setMovie(res.data))
       .catch((err) => console.error("Error fetching movie:", err));
   }, [id]);

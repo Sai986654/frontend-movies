@@ -14,7 +14,7 @@ const AdminDashboard = () => {
 
   const handleDelete = async (id) => {
     const token = localStorage.getItem("token");
-    await axios.delete(`https://localhost:7150/api/movies/${id}`, {
+    await axios.delete(`https://movies-db.azurewebsites.net/api/movies/${id}`, {
       headers: { Authorization: `Bearer ${token}` },
     });
     setMovies((prev) => prev.filter((movie) => movie.id !== id));

@@ -9,7 +9,7 @@ const Register = () => {
   const registerUser = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://localhost:7150/api/auth/register', {
+      const response = await axios.post('https://movies-db.azurewebsites.net/api/auth/register', {
         email,
         password,
         role
