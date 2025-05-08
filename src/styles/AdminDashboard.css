@@ -1,0 +1,72 @@
+/* AdminDashboard.css */
+
+.admin-dashboard {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+  }
+  
+  .dashboard-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .movies-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  
+  .movie-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie-details {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .movie-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .edit-button,
+  .delete-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .edit-button:hover {
+    background-color: #45a049;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .delete-button:hover {
+    background-color: #e53935;
+  }

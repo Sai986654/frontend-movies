@@ -124,3 +124,64 @@ button {
 button:hover {
   background-color: #1d4ed8;
 }
+
+/* General container styling */
+.app-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background for the startup page */
+.startup-page {
+  background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.auth-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Link styling */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00bcd4;
+}
+
+/* Separator styling */
+.separator {
+  color: white;
+  font-size: 1.2rem;
+}

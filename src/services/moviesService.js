@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "https://movies-db.azurewebsites.net/api/movies"; // Local backend URL
+const API_BASE_URL = "https://localhost:7150/api/movies"; // Local backend URL
 
 export const getAllMovies = async () => {
   const response = await axios.get(API_BASE_URL);
